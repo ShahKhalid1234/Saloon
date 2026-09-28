@@ -1,0 +1,6 @@
+{
+  "name": "King Hair Saloon",
+  "description": "Premium Haircut, Styling, and Facial Services in Anantnag, Jammu & Kashmir.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

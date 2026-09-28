@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-gold-50: #FCF9EC;
+  --color-gold-100: #F7F0CE;
+  --color-gold-200: #EEDFA0;
+  --color-gold-300: #E5CB6F;
+  --color-gold-400: #DCB444;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #B7932B;
+  --color-gold-700: #937423;
+  --color-gold-800: #6D541B;
+  --color-gold-900: #4B3913;
+  
+  --color-dark-50: #F3F4F6;
+  --color-dark-100: #E5E7EB;
+  --color-dark-800: #1B1B1E;
+  --color-dark-900: #121214;
+  --color-dark-950: #0B0B0C;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-dark-950);
+    color: var(--color-dark-50);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Premium Glassmorphism & Accent Styles */
+.gold-glow {
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+.gold-glow-strong {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.gold-border-glow:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+
+/* Custom Scrollbar for Premium Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-800);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-900);
+}
